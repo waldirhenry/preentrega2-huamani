@@ -1,0 +1,363 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales de mi home */
+
+
+
+body{
+    background-image:url(../img/mirador.jpg);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+/* estilos del header home*/
+
+
+header h1{
+    color: beige;
+    text-align: center;
+}
+
+/* estilos del main home */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img{
+    width: 70%;
+    margin: 1rem;
+}
+
+main p{
+    text-align:center;
+    font-weight: bold;
+}
+
+main h2{
+    text-align: center;
+    color:beige;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* estilos de section */
+
+section div{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  
+}
+
+section div p{
+    text-align: center;
+    color: beige;
+}
+
+
+/* estilos del footer */
+
+footer {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color:#294551;
+color: beige;
+}
+
+
+
+footer div img{
+    animation-name: logos;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logos {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(4px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* Color de letra del menu BT html Home */
+
+.navbar-brand{
+    color:white
+}
+
+.nav-link{
+    color: white;
+}
+
+
+
+ /* media queries del html */
+
+ @media screen and (min-width:600px) {
+   main{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns:repeat(2, 2fr) ;
+    grid-template-rows:0.5fr 1fr 1fr;
+    grid-template-areas: 
+    "h2 img"
+    "p img"
+    "p img";
+    justify-content: center;
+    justify-items: center;
+   }
+   
+   main h2{
+    grid-area: h2;
+    font-size: 1.5rem;
+   }
+
+   main img{
+    grid-area: img;
+
+   }
+
+   main p{
+    grid-area: p;
+    color: beige;
+   }
+
+    footer div img{
+        animation-name: logos;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes logos {
+        0%{
+            transform: translateY(0);
+        }
+
+        50%{
+            transform: translateY(4px);
+        }
+
+        100%{
+            transform: translateY(0);
+        }
+    }
+
+    footer{
+        color: #dc54ad;
+    }
+ }
+
+
+
+
+
+
+
+/* estilos generales de html Historia */
+
+.contenedor-dos{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* estilos del main historia */
+
+.main-dos{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+.main-dos p{
+    margin: 1rem;
+    padding: 1rem;
+}
+/* estilos de section historia */
+
+.section-dos{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section-dos .img-his{
+    display: none;
+}
+
+.section-dos .estiloSubtitulo{
+    color: #FECD70;
+    margin: 2rem;
+}
+
+.section-dos .parrafo-historia{
+    color: #C4DFAA;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*estilos de footer historia */
+
+.footer-dos{
+    display: flex;
+    flex-direction: column;
+    color: beige
+}
+
+.footer-dos div img{
+    animation-name: logi;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logi {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(5px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* media queries de html Historia */
+
+@media screen and (min-width:600px) {
+   .main-dos{
+    display: grid;
+    grid-template-columns:repeat(2, 2fr) ;
+    grid-template-areas: 
+    "h2 h2"
+    "p img"
+    "p img";
+    justify-content: center;
+    justify-items: center;
+   }
+   
+   main h2{
+    grid-area: h2;
+    font-size: 2rem;
+   }
+
+   main img{
+    grid-area: img;
+
+   }
+
+   main p{
+    grid-area: p;
+    color: beige;
+   }
+   
+
+   /* estilos de section-dos mq*/
+
+   .section-dos{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns:repeat(2, 2fr);
+    grid-template-areas: 
+    "estiloSubtitulo estiloSubtitulo"
+    "img-his parrafo-historia";
+   justify-content: center;
+   justify-items: center;
+
+ }
+  
+   .section-dos .estiloSubtitulo{
+    grid-area: estiloSubtitulo;
+    text-align: center;
+    color: #73A9AD;
+    font-size: 2rem;
+    margin: 2rem;
+   }
+
+   .section-dos .parrafo-historia{
+    grid-area: parrafo-historia;
+    color: beige;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+   }
+   
+   .section-dos .img-his{
+    display: block;
+    grid-area: img-his;
+    width: 40%;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    
+   }
+     
+   /* estilos footer de Mq html historia */
+
+  .footer-dos{
+    color: #dc54ad;
+  }
+  
+  .footer-dos div img{
+    animation-name: logi;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logi {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(5px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
