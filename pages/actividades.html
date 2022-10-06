@@ -4,56 +4,166 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- link de mi css -->
+    <link rel="stylesheet" href="../css/main.css">
     <title>Actividades</title>
 </head>
 <body>
-    <header>
-        <h1> Vive la Experiencia de la Ciudadela Inca </h1>
-          <nav>
-               <ul>
-                   <li>
-                    <a href="../index.html"> Home</a>
-                   </li>
-                   <li>
-                    <a href="../pages/historia.html">Historia</a>
-                   </li>
-                   <li>
-                    <a href="../pages/galeria.html">Galeria </a>
-                   </li>
-                   <li>
-                    <a href="actividades.html">Actividades </a>
-                   </li>
-                   <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                   </li>
-               </ul>
-           </nav>
-      </header>
+    <div class="contenedor-cuatro">
+        <!-- encabezado de mi proyecto-->
+        <header class="container-fluid">
+            <div class="row">
+            <h1> Vive la Mejor Experiencia </h1>
+            <nav class="navbar navbar-expand-lg bg-dark col-12">
+                <div class="container-fluid flex justify-content-center">
+                  <a class="navbar-brand" href="../index.html">Home</a>
+                  <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../pages/historia.html">Historia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/actividades.html">Actividades</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
 
-      <main>
+      <main class="main-cuatro">
 
-        <h2> Todas las experiencia preparadas para ti  </h2>
-    
-        <p> Muchos turistas hacen la caminata de la montana de 7 colores </p>
-       <img src="../img/montaña.jpg" alt="montaña de 7 colores">
-       <p> La morada de los dioses , lugar con monumentos tallados en piedra haciendo referencia al puma , hombre andino y pachamama , nueva actividad para recorrer </p>
-       <img src="../img/morada.jpg" alt="morada de los dioses">
-       <p> El mirador 3 cruces con los amaneceres mas bellos de todo cuzco , en temporada de junio muchos asisten para ver el fenomeno de Rayo Blanco </p>
-       <img src="../img/mirador.jpg" alt=" mirador de 3 cruces">
-       <p> La fiesta el Inti Raimi , dedicada al Dios Sol , se celebra en Junio</p>
-       <img src="../img/inti.jpg" alt="fiesta del inti raimi dios sol">
-       <p> La Fortaleza de Waqrapukara , belleza arquitectonica y de un paisaje unico , 3 dias de caminata recorriendo los caminos del inca </p>
-       <img src="../img/pukara.jpg" alt="fortaleza waqapukra"
+        <h2> Tenemos las mejores actividades para que conozcas una de las 7 Maravillas del Mundo</h2>
 
+        <div  class="card-tres">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0 bg-dark">
+              <div class="col-md-6">
+                <img src="../img/montaña.jpg" class="img-fluid rounded-start" alt="montaña de siete colores">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Montaña Arcoiris</h5>
+                  <p class="card-text">El monte se encuentra a 5.200 msnm , a un dia desde cuzco , recorrido a pie o montando caballo </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="card-cuatro">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0 bg-dark">
+              <div class="col-md-6">
+                <img src="../img/morada.jpg" class="img-fluid rounded-start" alt="morada de los dioses">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title"> La Morada de los Dioses </h5>
+                  <p class="card-text">Excursión a pie ,veremos los monumentos tallados en piedra que hacen referencia al puma , hombre andino y pachamama </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-       </main>
+        <div class="card-cinco">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0 bg-dark">
+              <div class="col-md-6">
+                <img src="../img/inti.jpg" class="img-fluid rounded-start" alt="la fiesta del inti raimi">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">El Inti Raimi </h5>
+                  <p class="card-text"> Celebración importante en adoración al Dios Sol , festividad ancestral donde todos los años turistas de todo el mundo asisten para presenciarlo </p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-seis">
+          <div class="card mb-3" style="max-width: 560px;">
+            <div class="row g-0 bg-dark">
+              <div class="col-md-6">
+                <img src="../img/pukara.jpg" class="img-fluid rounded-start" alt=" fortaleza de waqapukra">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title"> La Fortaleza de Waqapukra</h5>
+                  <p class="card-text"> Excursión de 3 dias a pie por los caminos del inca , llegando encontraremos la fortaleza de belleza arquitectonica y un paisaje único </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-siete">
+          <div class="card mb-3" style="max-width: 540px; ">
+            <div class="row g-0 bg-dark">
+              <div class="col-md-6">
+                <img src="../img/humantay.jpg" class="img-fluid rounded-start" alt="lago humantay">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title"> Laguna Humantay</h5>
+                  <p class="card-text"> Excursión de un día completo desde cuzco ,durante este paseo apreciará la flora y la vida silvestre, las montañas sagradas o Apus sagrados. </p>
+               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <div class="card-ocho">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0 bg-dark">
+              <div class="col-md-6">
+                <img src="../img/pisac.jpg" class="img-fluid rounded-start" alt="pueblo de pisac">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title"> El Pueblo de Pisac </h5>
+                  <p class="card-text"> Descubra Písac que está dividido en dos zonas, la antigua ubicada en la parte alta y la actual ubicada en el valle que data de la época colonial. </p>
+               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
       
 
       <footer>
-       <h3>
-        Todos los Derechos Reservados 
-       </h3>
-       <p>proyecto realizado por Waldir huamani grados</p>
+        <h3> Seguinos en nuestras redes sociales </h3>
+        <div>
+          <a href="https://instagram.com/turismo_machupicchu?igshid=YmMyMTA2M2Y=" target="_blank">
+         <img src="../img/389ecbe2-5147-4958-a91d-158fd50d5da1.logo-insta.png" alt="icono instagram"></a>
+         <a href="https://www.facebook.com/oficialmachupicchu"target="_blank">
+         <img src="../img/3ba1c8a5-731e-4abf-bb0e-2c9cda566d52.logo-face.png" alt="icono facebook"></a>
+        </div>
+          <p> Todos los Derechos Reservados </p>
       </footer>
+
+
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </body>
 </html>

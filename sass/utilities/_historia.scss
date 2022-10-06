@@ -1,0 +1,34 @@
+/* estilos de html historia*/
+.contenedor-dos{
+  @extend %flex;
+}
+/*estilos main de html historia*/
+.main-dos{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   img{
+    width: 80%;
+   }
+}
+/*estilos de section historia */
+.section-dos{
+    @extend %flex;
+}
+.estiloSubtitulo{
+    color: #47a75d;
+    margin: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+.parrafo-historia{
+    color:$color-principal;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+   
+}
+.img-his{
+    display: none;
+}

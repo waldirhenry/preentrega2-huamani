@@ -1,0 +1,216 @@
+/* media queries de html home*/
+@media screen and (min-width:600px) {
+ main{
+     padding: 1rem;
+     display: grid;
+     grid-template-columns:repeat(2, 2fr) ;
+     grid-template-rows:1fr 1fr 0.5fr;
+     grid-template-areas: 
+     "h2 img-main"
+     "parra-main img-main"
+     "parra-main img-main";
+     justify-content: center;
+     justify-items: center;
+     h2{
+        grid-area: h2;
+        font-size: 1.5rem;
+        }
+     .parra-main{
+        grid-area: parra-main;
+     }
+     .img-main{
+        grid-area: img-main;
+        align-items: center;
+     }
+     
+     }   
+}
+
+footer{
+    div{
+        img{
+            animation-name: logos;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            @keyframes logos{
+                0%{
+                    transform: translateY(0);
+                }
+        
+                50%{
+                    transform: translateY(4px);
+                }
+        
+                100%{
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}
+
+/* mediaqueries de html historia */
+
+@media screen and (min-width:600px) {
+    .main-dos{
+     display: grid;
+     grid-template-columns:repeat(2, 2fr) ;
+     grid-template-areas: 
+     "h2 h2"
+     "parra-main img"
+     "parra-main img";
+     justify-content: center;
+     justify-items: center;
+     h2{
+        grid-area: h2;
+        font-size: 2rem;
+        img{
+            grid-area: img;
+        }
+     }
+    }
+    .parra-main{
+        grid-area: p;
+         color: $color-principal;
+    }
+ 
+    /*section-dos mediaqueries Historia*/
+    .section-dos{
+     padding: 1rem;
+     display: grid;
+     grid-template-columns:repeat(2, 2fr);
+     grid-template-areas: 
+     "estiloSubtitulo estiloSubtitulo"
+     "img-his parrafo-historia";
+    justify-content: center;
+    justify-items: center;
+  }
+    .estiloSubtitulo{
+     grid-area: estiloSubtitulo;
+     text-align: center;
+     color: #0fb9c5;
+     font-size: 2rem;
+     margin: 2rem;
+    }
+     .parrafo-historia{
+     grid-area: parrafo-historia;
+     color: beige;
+     text-align: center;
+     font-size: 1rem;
+     font-weight: bold;
+    }
+     .img-his{
+     display: block;
+     grid-area: img-his;
+     width: 40%;
+     margin: 1rem;
+     padding-bottom: 1rem;
+     
+    }
+}
+/* estilo mediaqueries de html Galeria*/
+
+@media screen and (min-width:600px) {
+    .main-tres{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 0.1fr 0.5fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "subtitulo-gale subtitulo-gale"
+        "img-maras img-olla"
+        "img-salina img-sacsa"
+        "img-armas img-colonia"
+        "img-tambo img-cate";
+        justify-content: center;
+        justify-items: center;
+       }    
+       .subtitulo-gale{
+        grid-area: subtitulo-gale;
+       }
+       .img-maras{
+        grid-area: img-maras;
+       }
+        .img-olla{
+        grid-area: img-olla;  
+        }
+        .img-salina{
+        grid-area: img-salina;
+       }
+       .img-sacsa{
+        grid-area: img-sacsa; 
+        }
+        .img-armas{
+        grid-area: img-armas;
+       }
+       .img-colonia{
+           grid-area: img-colonia;    
+       }
+       .img-tambo{
+           grid-area: img-tambo;
+       }
+       .img-cate{
+           grid-area: img-cate;
+          }
+    }
+/* estilo mediaqueries html actividades*/
+     @media screen and (min-width:600px){
+        .main-cuatro{
+           display: grid;
+           grid-template-columns: repeat(2, 2fr);
+           grid-template-rows: 1fr 1fr 1fr 1fr;
+           grid-template-areas: 
+           "h2 h2"
+           "card-tres card-cuatro"
+           "card-cinco card-seis"
+           "card-siete card-ocho";
+           gap: 2rem;
+           margin: 2rem;  
+       }
+       .card-tres{
+            grid-area: card-tres;
+       }
+       .card-cuatro{
+        grid-area: card-cuatro;  
+       }
+       .card-cinco{
+        grid-area: card-cinco;  
+       }
+       .card-seis{
+        grid-area: card-seis;
+       }
+       .card-siete{
+        grid-area: card-siete;      
+       }
+       .card-ocho{
+        grid-area: card-ocho;
+       } 
+       }
+    
+    /* estilo mediaqueries de html contacto*/
+    @media screen and (min-width:600px) {
+        .main-cinco{  
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "estilo-contacto estilo-contacto"
+        " sec-conta img-contacti"
+        "sec-conta img-contacti"
+        "sec-conta img-contacti";
+       justify-content: center;
+       justify-items: center;
+    }
+    .estilo-contacto{
+    grid-area: estilo-contacto;
+    text-align: center;
+    font-size: 2rem;
+    }
+    .sec-conta{
+    grid-area: sec-conta;
+    }
+    .img-contacti{
+     grid-area: img-contacti;
+    width: 50%;
+    }
+    }
+

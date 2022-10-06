@@ -1,0 +1,36 @@
+/*estilos del html contacto */
+.main-cinco{
+    display: flex;
+    flex-direction:column;
+}
+.estilo-contacto{
+   color: #FECD70;
+}
+.img-contacti{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.sec-conta{
+    legend{
+    text-align: center;
+    color: $color-principal;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+}
+div{
+    label{
+    color: white;
+    margin: 1rem;
+    input{     
+        border-radius: 5px;
+    }
+}
+}
+.caja-coment{
+             input{
+             height: 80px;
+             border-radius: 5px;
+}
+}
