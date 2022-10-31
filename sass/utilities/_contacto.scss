@@ -14,14 +14,16 @@
 .sec-conta{
     legend{
     text-align: center;
-    color: $color-principal;
+    color: rgb(87, 92, 29);
+    text-shadow: 1px 1px 1px black;
     margin-top: 1rem;
     font-weight: bold;
 }
 }
 div{
     label{
-    color: white;
+    color: rgb(235, 235, 235);
+    font-weight: bold;
     margin: 1rem;
     input{     
         border-radius: 5px;

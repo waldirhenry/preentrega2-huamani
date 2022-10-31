@@ -10,32 +10,34 @@ body{
     display: flex;
     flex-direction: column;
 }
-   header h1{
-     color:beige;
+ header h1{
+     color:rgb(188, 195, 112);
      text-align: center;
+     text-shadow: 1px 1px 2px black; 
+     font-size: 2.5rem;
 }
-
 /* estilos del main home*/
 main{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     h2{
         text-align: center;
         color: $color-principal;
         margin: 1rem;
         padding: 1rem;
-    }
-     .parra-main{
+        text-shadow: 1px 1px 2px black;
+        }
+    .parra-main{
             text-align:center;
             font-weight: bold;
-            margin: 1rem;
             color: $color-principal;
-      }
-    .img-main{
-        width: 70%;
-        margin: 1rem;
-    }
+            padding: 1rem;
+            margin: 1rem;
+        }
+    div img{
+        border-radius: 10px;
+        }
     }
 
 /* estilos de section home*/
@@ -46,11 +48,6 @@ section{
          align-items: center;
          margin: 1rem;
          padding: 1rem;
-         p{
-             text-align: center;
-            color: $color-principal;
-
-   }
 }
 }
 /*estilos de footer home*/
